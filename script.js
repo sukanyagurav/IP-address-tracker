@@ -1,5 +1,4 @@
 import API_KEY from "./API_KEY.js"
-console.log(API_KEY)
 let url = `https://api.ipgeolocation.io/ipgeo?apiKey=${API_KEY}&ip=`
 let latitude,longitude
 const ipAddressLabel= document.querySelector('.ip_address')
