@@ -41,6 +41,7 @@ form.addEventListener('submit',async function(e){
         error.innerHTML=''
         const data =await fetchIP(`https://api.ipgeolocation.io/ipgeo?apiKey=${API_KEY}&ip=${ipInput.value}`)
         drawMap(data)
+        console.log(data)
     }
 
 })
