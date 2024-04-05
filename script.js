@@ -1,5 +1,5 @@
 import API_KEY from "./API_KEY.js"
-let url = `https://api.ipgeolocation.io/ipgeo?apiKey=${API_KEY}&ip=`
+let url = `https://api.ipgeolocation.io/ipgeo?apiKey=${API_KEY}`
 let latitude,longitude
 const ipAddressLabel= document.querySelector('.ip_address')
 const locationLabel= document.querySelector('.location')
@@ -39,17 +39,17 @@ form.addEventListener('submit',async function(e){
     }
     else{
         error.innerHTML=''
-        const data =await fetchIP(ipInput.value)
+        const data =await fetchIP(`https://api.ipgeolocation.io/ipgeo?apiKey=${API_KEY}&ip=${ipInput.value}`)
         drawMap(data)
-        
     }
 
 })
 
 
 window.addEventListener('load',async function(){
-    const data =await fetchIP(geoplugin_request())
-    drawMap(data)
+    const data =await fetchIP(url)
+    drawMap(data,'')
+  
 })
 function drawMap(data){
     ipAddressLabel.innerHTML=data.ip
@@ -76,9 +76,9 @@ function drawMap(data){
     },1000)
 }
 
-async function fetchIP(ipaddress){
+async function fetchIP(url){
     try{
-        const res = await fetch(`${url}${ipaddress}`)
+        const res = await fetch(`${url}`)
         const data =await res.json()
         if(res.status>400){
             throw error()
