@@ -60,7 +60,7 @@ function drawMap(data){
     timezoneLabel.innerHTML=data.time_zone.name
     ispLabel.innerHTML=data.isp
     locationLabel.innerHTML=`${data.city}, ${data.country_name}`
-    console.log(data.ip)
+
     map.setView([data.latitude, data.longitude], 19)
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: false,
