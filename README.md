@@ -32,7 +32,7 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/sukanyagurav/IP-address-tracker)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Ip_address_tracker.git](https://github.com/sukanyagurav/IP-address-tracker)
+- Live Site URL: [IP_ADDRESS_TRACKER](https://your-live-site-url.com)
 
 **Have fun building!** 🚀
