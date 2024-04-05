@@ -1,5 +1,7 @@
 # Frontend Mentor - IP address tracker
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ce6351c6-0412-405d-bf70-bd4c32d27fb4/deploy-status)](https://app.netlify.com/sites/luminous-starlight-cbd847/deploys)
+
 ![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
@@ -30,7 +32,7 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/sukanyagurav/IP-address-tracker)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 **Have fun building!** 🚀
